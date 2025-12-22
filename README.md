@@ -80,26 +80,6 @@ We welcome contributions from the community! Here's how to get involved:
 
 ---
 
-## Resources
-
-### Documentation
-- [Getting Started](https://docs.ucli.tools/getting-started) - Install and setup
-- [Tool Guides](https://docs.ucli.tools/tools) - Complete tool documentation
-- [Contributing](https://docs.ucli.tools/community/contributing) - How to contribute
-- [Roadmap](https://docs.ucli.tools/roadmap) - What's next
-
-### Community
-- [GitHub Discussions](https://github.com/orgs/ucli-tools/discussions) - Q&A and community
-- [GitHub Issues](https://github.com/ucli-tools/ucli/issues) - Bug reports
-- [Website](https://ucli.tools) - Project homepage
-
-### Learn More
-- [Tool Ecosystem](https://ucli.tools/tools) - All available tools
-- [GitS Guide](https://docs.ucli.tools/tools/gits) - Our flagship tool
-- [ucli Manager](https://docs.ucli.tools/tools/ucli) - Tool management
-
----
-
 ## Support
 
 ### Getting Help
@@ -130,29 +110,4 @@ We are committed to providing a welcoming and inclusive community. Please read o
 
 ## License
 
-**All Repositories:** Apache 2.0 License
-
-All community discussions and contributions are under the [GitHub Terms of Service](https://docs.github.com/en/site-policy/github-terms/github-terms-of-service).
-
----
-
-## Special Thanks
-
-Built by the UCLI Tools team and community contributors.
-
-**Powered by:**
-- Open source technologies (Bash, Python, Go)
-- Cross-platform compatibility (Linux, macOS, Windows)
-- Amazing community contributors
-
----
-
-<div align="center">
-
-**Ready to boost your CLI productivity?**
-
-[Install ucli](https://docs.ucli.tools/getting-started) • [Start a Discussion](https://github.com/orgs/ucli-tools/discussions) • [Join the Community](https://github.com/ucli-tools)
-
-** 2025 UCLI Tools - Professional CLI tools for developers**
-
-</div>
+**Apache 2.0 License**
