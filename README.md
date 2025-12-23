@@ -6,7 +6,7 @@
 
 The place to ask questions, share ideas, and connect with developers building professional CLI tools.
 
-[Start a Discussion](https://github.com/orgs/ucli-tools/discussions) • [Documentation](https://docs.ucli.tools) • [Website](https://ucli.tools)
+[Start a Discussion](https://github.com/ucli-tools/community/discussions) • [Documentation](https://docs.ucli.tools) • [Website](https://ucli.tools)
 
 </div>
 
@@ -22,7 +22,7 @@ This is the home for **UCLI Tools community discussions**. Use GitHub Discussion
 - **Announcements** - Stay updated with the latest tool releases
 - **Issues** - Report bugs and technical issues
 
-**[→ Start a discussion](https://github.com/orgs/ucli-tools/discussions)**
+**[→ Start a discussion](https://github.com/ucli-tools/community/discussions)**
 
 ### Setting Up Discussions
 
@@ -122,7 +122,7 @@ We welcome contributions from the community! Here's how to get involved:
 ### Getting Help
 
 1. **📚 Documentation:** [docs.ucli.tools](https://docs.ucli.tools)
-2. **💬 Discussions:** [GitHub Discussions](https://github.com/orgs/ucli-tools/discussions)
+2. **💬 Discussions:** [GitHub Discussions](https://github.com/ucli-tools/community/discussions)
 3. **🐛 Bug Reports:** Open an issue in the relevant repository
 4. **🔒 Security Issues:** [security@ucli.tools](mailto:security@ucli.tools)
 
