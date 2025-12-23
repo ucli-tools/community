@@ -1,0 +1,85 @@
+name: Setup Repository
+
+on:
+  workflow_dispatch:
+    inputs:
+      enable_discussions:
+        description: 'Enable GitHub Discussions'
+        required: false
+        default: false
+        type: boolean
+      set_description:
+        description: 'Update repository description'
+        required: false
+        default: true
+        type: boolean
+      set_topics:
+        description: 'Update repository topics'
+        required: false
+        default: true
+        type: boolean
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      repository-projects: write
+      discussions: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup GitHub CLI
+        run: |
+          curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | sudo dd of=/usr/share/keyrings/githubcli-archive-keyring.gpg
+          sudo chmod go+r /usr/share/keyrings/githubcli-archive-keyring.gpg
+          echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | sudo tee /etc/apt/sources.list.d/github-cli.list > /dev/null
+          sudo apt update
+          sudo apt install gh -y
+
+      - name: Authenticate with GitHub
+        run: |
+          echo ${{ secrets.GITHUB_TOKEN }} | gh auth login --with-token
+
+      - name: Enable GitHub Discussions
+        if: ${{ github.event.inputs.enable_discussions == 'true' }}
+        run: |
+          echo "Enabling GitHub Discussions..."
+          gh api repos/${{ github.repository }} -X PATCH -F has_discussions=true
+          echo "✅ GitHub Discussions enabled"
+
+      - name: Update Repository Description
+        if: ${{ github.event.inputs.set_description == 'true' }}
+        run: |
+          echo "Updating repository description..."
+          gh repo edit ${{ github.repository }} \
+            --description "UCLI Tools community hub for discussions, questions, and collaboration"
+          echo "✅ Repository description updated"
+
+      - name: Update Repository Topics
+        if: ${{ github.event.inputs.set_topics == 'true' }}
+        run: |
+          echo "Updating repository topics..."
+          gh repo edit ${{ github.repository }} \
+            --add-topic cli \
+            --add-topic tools \
+            --add-topic automation \
+            --add-topic community \
+            --add-topic discussions
+          echo "✅ Repository topics updated"
+
+      - name: Create Initial Discussion Categories
+        if: ${{ github.event.inputs.enable_discussions == 'true' }}
+        run: |
+          echo "Creating initial discussion categories..."
+          # Note: This would require GitHub CLI support for discussion categories
+          # For now, this is a placeholder for manual setup
+          echo "⚠️  Discussion categories need to be created manually in GitHub UI"
+          echo "   Suggested categories:"
+          echo "   - General"
+          echo "   - Ideas"
+          echo "   - Q&A"
+          echo "   - Show and tell"
+          echo "   - Announcements"

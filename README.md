@@ -24,6 +24,43 @@ This is the home for **UCLI Tools community discussions**. Use GitHub Discussion
 
 **[→ Start a discussion](https://github.com/orgs/ucli-tools/discussions)**
 
+### Setting Up Discussions
+
+To enable GitHub Discussions for this repository:
+
+#### Option 1: Manual Setup
+1. Go to repository **Settings** → **General** → **Features**
+2. Check **Discussions**
+3. Create discussion categories:
+   - **General** - General discussions and questions
+   - **Ideas** - Feature requests and tool suggestions
+   - **Q&A** - Questions and technical help
+   - **Show and tell** - Share your workflows and scripts
+   - **Announcements** - Tool releases and updates
+
+#### Option 2: Automated Setup
+Run the setup script to check and configure repository features:
+
+```bash
+# Clone the repository
+git clone https://github.com/ucli-tools/community.git
+cd community
+
+# Run setup script (requires GitHub CLI)
+bash .github/setup-discussions.sh
+
+# Or use GitHub Actions workflow
+# Go to Actions → Setup Repository → Run workflow
+```
+
+#### Option 3: GitHub Actions
+Use the automated workflow to enable discussions and set repository metadata:
+
+1. Go to **Actions** tab in GitHub
+2. Select **Setup Repository** workflow
+3. Click **Run workflow**
+4. Check options for discussions, description, and topics
+
 ---
 
 ## Quick Start
