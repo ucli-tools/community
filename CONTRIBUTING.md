@@ -21,7 +21,7 @@ Found a bug in any tool? Help us fix it:
 
 Have an idea for a new tool or feature? We'd love to hear it:
 
-1. Check [Discussions](https://github.com/orgs/ucli-tools/discussions) first
+1. Check [Discussions](https://github.com/ucli-tools/community/discussions) first
 2. Create a new discussion in the "Ideas" category
 3. Describe the problem it solves for developers
 4. Explain your proposed solution
@@ -255,7 +255,7 @@ Want to add a new tool to the ecosystem?
 
 ### Process
 
-1. **Propose the idea** in [Discussions](https://github.com/orgs/ucli-tools/discussions)
+1. **Propose the idea** in [Discussions](https://github.com/ucli-tools/community/discussions)
 2. **Create proof of concept** in your fork
 3. **Get community feedback**
 4. **Submit as new repository** under ucli-tools organization
@@ -266,7 +266,7 @@ Want to add a new tool to the ecosystem?
 
 Need help contributing?
 
-- [GitHub Discussions](https://github.com/orgs/ucli-tools/discussions) - Ask questions
+- [GitHub Discussions](https://github.com/ucli-tools/community/discussions) - Ask questions
 - [Documentation](https://docs.ucli.tools) - Learn about tools
 - [Tool READMEs](https://github.com/ucli-tools) - Specific tool docs
 - [Community](https://github.com/ucli-tools/community) - General discussions
